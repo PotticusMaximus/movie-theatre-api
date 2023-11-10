@@ -1,6 +1,7 @@
 const { Router } = require("express");
 const { Show, User } = require("../models/index");
 const { check, validationResult } = require("express-validator");
+const { Sequelize } = require("sequelize");
 //
 const showRouter = Router();
 const userRouter = Router();
