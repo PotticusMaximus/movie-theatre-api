@@ -1,32 +1,75 @@
 [
+  { "title": "The Shawshank Redemption", "genre": "Drama", "available": true },
+  { "title": "The Godfather", "genre": "Crime", "available": true },
+  { "title": "The Dark Knight", "genre": "Action", "available": true },
+  { "title": "Pulp Fiction", "genre": "Crime", "available": true },
   {
-    "title": "Inception",
-    "genre": "Science Fiction",
-    "available": true
-  },
-  {
-    "title": "The Dark Knight",
-    "genre": "Action",
-    "available": true
-  },
-  {
-    "title": "Harry Potter: The Prisoner of Azkaban",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
     "genre": "Fantasy",
     "available": true
   },
+  { "title": "Forrest Gump", "genre": "Drama", "available": true },
+  { "title": "Inception", "genre": "Action", "available": true },
+  { "title": "The Matrix", "genre": "Action", "available": true },
+  { "title": "Schindler's List", "genre": "Biography", "available": true },
+  { "title": "Fight Club", "genre": "Drama", "available": true },
+  { "title": "The Godfather: Part II", "genre": "Crime", "available": true },
   {
-    "title": "Jurassic Park",
-    "genre": "Science Fiction",
-    "available": false
+    "title": "The Lord of the Rings: The Two Towers",
+    "genre": "Fantasy",
+    "available": true
   },
+  { "title": "The Silence of the Lambs", "genre": "Crime", "available": true },
+  {
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "genre": "Action",
+    "available": true
+  },
+  { "title": "The Green Mile", "genre": "Crime", "available": true },
   {
     "title": "The Lord of the Rings: The Return of the King",
     "genre": "Fantasy",
     "available": true
   },
+  { "title": "Goodfellas", "genre": "Biography", "available": true },
+  { "title": "Se7en", "genre": "Crime", "available": true },
+  { "title": "Inglourious Basterds", "genre": "Adventure", "available": true },
+  { "title": "The Matrix Reloaded", "genre": "Action", "available": true },
+  { "title": "The Departed", "genre": "Crime", "available": true },
+  { "title": "The Lion King", "genre": "Animation", "available": true },
+  { "title": "Saving Private Ryan", "genre": "Drama", "available": true },
+  { "title": "The Dark Knight Rises", "genre": "Action", "available": true },
+  { "title": "Gladiator", "genre": "Action", "available": true },
+  { "title": "The Pianist", "genre": "Biography", "available": true },
+  { "title": "The Usual Suspects", "genre": "Crime", "available": true },
+  { "title": "Interstellar", "genre": "Adventure", "available": true },
+  { "title": "The Silence of the Lambs", "genre": "Crime", "available": true },
+  { "title": "The Prestige", "genre": "Drama", "available": true },
+  { "title": "Memento", "genre": "Mystery", "available": true },
   {
-    "title": "Black Panther",
-    "genre": "Action",
+    "title": "The Grand Budapest Hotel",
+    "genre": "Adventure",
     "available": true
-  }
+  },
+  { "title": "The Shining", "genre": "Drama", "available": true },
+  { "title": "The Revenant", "genre": "Action", "available": true },
+  { "title": "Jurassic Park", "genre": "Adventure", "available": true },
+  { "title": "The Social Network", "genre": "Biography", "available": true },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "genre": "Drama",
+    "available": true
+  },
+  { "title": "Casablanca", "genre": "Drama", "available": true },
+  { "title": "Amélie", "genre": "Comedy", "available": true },
+  { "title": "Django Unchained", "genre": "Western", "available": true },
+  { "title": "The Great Gatsby", "genre": "Drama", "available": true },
+  { "title": "A Beautiful Mind", "genre": "Biography", "available": true },
+  { "title": "Inception", "genre": "Action", "available": true },
+  { "title": "Blade Runner", "genre": "Sci-Fi", "available": true },
+  { "title": "The Godfather: Part III", "genre": "Crime", "available": true },
+  { "title": "Shutter Island", "genre": "Mystery", "available": true },
+  { "title": "The Truman Show", "genre": "Comedy", "available": true },
+  { "title": "Casino", "genre": "Crime", "available": true },
+  { "title": "Whiplash", "genre": "Drama", "available": true }
 ]

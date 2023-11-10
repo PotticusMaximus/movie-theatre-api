@@ -5,7 +5,6 @@ const { Sequelize } = require("sequelize");
 //
 const showRouter = Router();
 const userRouter = Router();
-//
 //showRouter CRUD
 showRouter.get("/", async (req, res) => {
   try {
@@ -26,10 +25,18 @@ showRouter.get("/:id", async (req, res) => {
     res.status(500).send({ error: "Error ocurred during GET ID request" });
   }
 });
-//
+
 showRouter.get("/genre/:genre", async (req, res) => {
   try {
-    const genre = req.params.genre; //
+    const userEnteredGenre = req.params.genre.toLowerCase();
+    let genre;
+    if (userEnteredGenre.includes("sci")) {
+      genre = "Sci-Fi";
+    } else {
+      genre =
+        userEnteredGenre.charAt(0).toUpperCase() +
+        userEnteredGenre.slice(1).toLowerCase();
+    }
     const findShow = await Show.findAll({ where: { genre: genre } });
     res.json(findShow);
   } catch (error) {
