@@ -100,7 +100,14 @@ userRouter.get("/", async (req, res) => {
 userRouter.get("/:id", async (req, res) => {
   try {
     const id = req.params.id; //
-    const findUser = await User.findByPk(id);
+    const findUser = await User.findByPk(id, {
+      include: [
+        {
+          model: Show,
+          through: "watched",
+        },
+      ],
+    });
     res.json(findUser);
   } catch (error) {
     res.status(500).send({ error: "Error ocurred during GET ID request" });
@@ -121,6 +128,20 @@ userRouter.put("/:id", async (req, res) => {
   try {
     const id = req.params.id; //
     const updateUser = await User.update(req.body, { where: { id: id } });
+    const findUser = await User.findAll();
+    res.json(findUser);
+  } catch (error) {
+    res.status(500).send({ error: "Error ocurred during PUT request" });
+  }
+});
+//
+userRouter.put("/:id/shows/:sid", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const sid = req.params.sid; //
+    const updateUser = await User.findByPk(id);
+    const findShow = await Show.findByPk(sid);
+    const watchShow = await updateUser.addShow(findShow);
     const findUser = await User.findAll();
     res.json(findUser);
   } catch (error) {
